@@ -6,7 +6,7 @@
 /*   By: sbelazou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/01 12:23:31 by sbelazou          #+#    #+#             */
-/*   Updated: 2017/04/01 12:40:40 by sbelazou         ###   ########.fr       */
+/*   Updated: 2017/04/03 14:16:36 by sbelazou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,12 +47,12 @@ void		convert_to_iso(t_map *under, t_map *map, t_axes *axes, t_data *data)
 		init(map, axes, data);
 		if (map->y == map->next->y)
 		{
-			convert(map, axes, data, 1);
+			convert(map, axes, data);
 			ft_drawline(axes, data, map);
 		}
 		if (under->next != NULL)
 		{
-			convert_under(under, axes, data, 0);
+			convert_under(under, axes, data);
 			ft_drawline(axes, data, map);
 			under = under->next;
 		}

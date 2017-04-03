@@ -6,11 +6,11 @@
 /*   By: sbelazou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/02/10 12:13:05 by sbelazou          #+#    #+#             */
-/*   Updated: 2016/02/10 12:13:09 by sbelazou         ###   ########.fr       */
+/*   Updated: 2017/04/03 14:44:57 by sbelazou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../fdf.h"
+#include "../includes/fdf.h"
 
 void	ft_error(int i)
 {
@@ -52,7 +52,7 @@ int		parse(char *file, t_data *data)
 	data->z_max = 0;
 	data->y = 0;
 	if ((map = (t_map *)malloc(sizeof(*map))) == NULL)
-		ft_error(-1); 
+		ft_error(-1);
 	data->first = map;
 	if ((data->fd = open(file, O_RDWR)) == -1)
 		ft_error(-1);

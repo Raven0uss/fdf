@@ -3,21 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   fdf.h                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ffrimpon <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: sbelazou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/01/11 18:26:25 by ffrimpon          #+#    #+#             */
-/*   Updated: 2016/02/10 12:20:16 by ffrimpon         ###   ########.fr       */
+/*   Created: 2017/04/03 16:26:25 by sbelazou          #+#    #+#             */
+/*   Updated: 2017/04/03 17:23:47 by sbelazou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FDF_H
 # define FDF_H
 
-# include "mlx.h"
-# include "libft.h"
-# include "stdlib.h"
+# include "libft/libft.h"
+# include <mlx.h>
 # include <math.h>
-# include <unistd.h>
 # include <fcntl.h>
 
 typedef struct		s_map

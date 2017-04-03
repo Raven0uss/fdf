@@ -6,7 +6,7 @@
 /*   By: sbelazou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/01 12:13:52 by sbelazou          #+#    #+#             */
-/*   Updated: 2017/04/01 12:50:23 by sbelazou         ###   ########.fr       */
+/*   Updated: 2017/04/03 14:19:20 by sbelazou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,9 @@ int			ft_key(int k, t_axes *axes)
 	mlx_clear_window(axes->mlx, axes->win);
 	mlx_destroy_image(axes->mlx, axes->img.adr);
 	img_init(axes);
-	take_your_fucking_map(axes);
+	execute(axes);
 	mlx_put_image_to_window(axes->mlx, axes->win, axes->img.adr, 0, 0);
-	how_to_use_it(axes);
+	commands(axes);
 	if (k == 53)
 		exit(0);
 	return (0);
