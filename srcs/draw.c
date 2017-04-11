@@ -6,7 +6,7 @@
 /*   By: sbelazou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/01 12:12:31 by sbelazou          #+#    #+#             */
-/*   Updated: 2017/04/03 14:15:55 by sbelazou         ###   ########.fr       */
+/*   Updated: 2017/04/04 11:05:14 by sbelazou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ void	ft_drawline(t_axes *axes, t_data *data, t_map *map)
 void	commands(t_axes *axes)
 {
 	mlx_string_put(axes->mlx, axes->win, 10, 10, 0xFFFFFF,
-				   "[-][COMMANDS - [FdF42 - sbelazou]][-]");
+			"[-][COMMANDS - [FdF42 - sbelazou]][-]");
 	mlx_string_put(axes->mlx, axes->win, 10, 30, 0xFFFFFF,
 			"[9 6] : Zoom avant, Zoom arriere");
 	mlx_string_put(axes->mlx, axes->win, 10, 50, 0xFFFFFF,
